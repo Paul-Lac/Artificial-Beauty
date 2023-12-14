@@ -1,12 +1,13 @@
-.card {
+.card-front {
   height: 18rem;
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* visibility: hidden; */
 }
 
-.card img {
+.card-front .img-front {
   height: 15rem;
   width: 100%;
   object-fit: cover;
@@ -15,7 +16,7 @@
   border-top-right-radius: 3px;
 }
 
-.card h2 {
+.card-front .h2-front {
   height: 3rem;
   color: #002642;
   font-size: 1rem;
@@ -26,4 +27,51 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+}
+
+.card-front .p-front {
+  display: none;
+}
+
+.card-back {
+  height: 18rem;
+  flex-basis: 30%;
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.card-back .img-back {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  filter: blur(10px) brightness(150%);
+}
+
+.card-back .h2-back {
+  /* height: 3rem; */
+  color: #002642;
+  font-size: 1rem;
+  /* background-color: #eee7e7; */
+  /* border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 0.75rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.card-back .p-back {
+  color: #002642;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem;
+  position: absolute;
+  top: 5rem;
 }
