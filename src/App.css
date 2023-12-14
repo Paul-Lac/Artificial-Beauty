@@ -1,0 +1,27 @@
+body {
+  background-color: #002642;
+}
+
+header {
+  height: 20rem;
+  background-image: url("../public/feather-3010848_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: #002642;
+}
+
+header p {
+  color: #002642;
+  font-size: 1.5rem;
+}
