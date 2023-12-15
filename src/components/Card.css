@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* visibility: hidden; */
 }
 
 .card-front .img-front {
@@ -37,9 +36,6 @@
   height: 18rem;
   flex-basis: 30%;
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .card-back .img-back {
@@ -49,7 +45,7 @@
   object-position: center;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  filter: blur(10px) brightness(150%);
+  filter: blur(3px) brightness(250%) contrast(45%);
 }
 
 .card-back .h2-back {
