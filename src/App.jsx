@@ -1,17 +1,17 @@
-import './App.css'
-import cardItems from './components/cardItems';
-import CardList from './components/CardList';
+import { Link, Outlet } from "react-router-dom";
+
+import './App.css';
+import Header from "./components/Header";
 
 function App() {
   return (
-    <body>
-      <header>
-        <h1>La beauté au quotidien selon l'intelligence artificielle</h1>
-        <p>"ChatGPT, quels objets faudrait-il créer pour rendre le quotidien des humains plus beau ?"</p>
-      </header>
-      <CardList cardItems={cardItems}/>
-    </body>
-  )
-}
+      <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+  </>
+  );
+};
 
-export default App
+export default App;

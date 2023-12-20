@@ -46,4 +46,4 @@ const cardItems = [
     },       
   ];
 
-export default cardItems
+export default cardItems;
