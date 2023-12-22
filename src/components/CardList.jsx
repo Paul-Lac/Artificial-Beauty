@@ -6,7 +6,7 @@ function CardList({ cardItems }) {
 
 const [clickedCard, setClickedCard] = useState(null);
     
-const handleClick = (index) => {
+const handleFlipClick = (index) => {
     console.log(clickedCard);
     if (clickedCard === null) {
         // there are no cards returned - first click
@@ -23,7 +23,7 @@ const handleClick = (index) => {
     return (
         <section className="card-container">
             {cardItems.map((item, index) => (
-                <Card card={item} handleClick={() => handleClick(index)} isBackCard={clickedCard === index}/>
+                <Card card={item} handleFlipClick={() => handleFlipClick(index)} isBackCard={clickedCard === index}/>
                 ))}
         </section>
     )

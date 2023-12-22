@@ -1,11 +1,14 @@
 #logo {
-  height: 4rem;
+  height: 3rem;
+  margin: 0.25rem 0.75rem;
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  z-index: 2;
 }
 
 .header-menu {
@@ -14,7 +17,19 @@
   list-style: none;
 }
 
+.header-menu li {
+  /* width: 7rem; */
+}
+
 .menu-links {
+  display: block;
+  text-align: center;
   text-decoration: none;
-  padding: 1rem;
+  color: #002642;
+  width: 7rem;
+}
+
+.menu-links:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }

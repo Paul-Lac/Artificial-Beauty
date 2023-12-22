@@ -1,16 +1,27 @@
-import cardItems from "../components/CardItems";
+import { useState } from "react";
+import FilterButton from "../components/FilterButton"
+import cardItems from "../data";
 import CardList from '../components/CardList';
 
 import "./Home.css"
 
 function Home() {
+
+const [filteredList, setFilteredList] = useState(cardItems);
+
+const handleFilterClick = (event) => {
+  const filtered = cardItems.filter(item => item.scope.includes(event.target.value));
+  setFilteredList(filtered);
+}
+
   return (
     <>
       <section className="top">
-        <h1>La beauté au quotidien selon l'intelligence artificielle</h1>
-        <p>"ChatGPT, quels objets faudrait-il créer pour rendre le quotidien des humains plus beau ?"</p>
+        <h1>Beautés artificielles</h1>
+        <p>"ChatGPT, quels objets faudrait-il créer pour embellir ... ?"</p>
+        <FilterButton handleFilterClick={handleFilterClick} />
       </section>
-      <CardList cardItems={cardItems}/>
+      <CardList cardItems={filteredList}/>
     </>
   )
 };
