@@ -16,8 +16,8 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-front .h2-front {
@@ -25,13 +25,13 @@
   color: #002642;
   font-size: 1.25rem;
   background-color: #eee7e7;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  margin-top: 0;
+  margin: 0;
 }
 
 .card-front .p-front {
@@ -50,24 +50,26 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  filter: blur(3px) brightness(250%) contrast(45%);
+  border-radius: 10px;
+  filter: blur(3px) brightness(400%) contrast(40%);
 }
 
 .card-back .h2-back {
   color: #002642;
   font-size: 1.25rem;
-  padding: 0.75rem;
+  padding: 0.25rem;
   position: absolute;
   top: 1rem;
+  text-align: center;
+  width: 100%;
 }
 
 .card-back .p-back {
   color: #002642;
   font-weight: 600;
   font-size: 1rem;
-  padding: 0.75rem;
+  padding: 1rem;
   position: absolute;
   top: 5rem;
+  text-align: justify;
 }

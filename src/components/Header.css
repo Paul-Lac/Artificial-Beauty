@@ -15,21 +15,19 @@
   display: flex;
   align-items: center;
   list-style: none;
-}
-
-.header-menu li {
-  /* width: 7rem; */
+  margin-right: 1rem;
 }
 
 .menu-links {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #002642;
+  color: var(--main-bg-color);
   width: 7rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .menu-links:hover {
   font-weight: bold;
-  text-decoration: underline;
 }

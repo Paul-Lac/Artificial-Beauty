@@ -7,18 +7,19 @@
 .filter button {
   background-color: #eee7e7;
   font-size: 1rem;
-  color: #002642;
+  font-weight: 600;
+  color: var(--main-bg-color);
   margin: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border: 0.5px solid #002642;
+  border: 0.5px solid var(--main-bg-color);
 }
 
 .filter button:hover {
-  background-color: #002642;
-  color: #eee7e7;
+  background-color: var(--main-bg-color);
+  color: var(--main-light-color);
   transform: scale(1.03);
 }
